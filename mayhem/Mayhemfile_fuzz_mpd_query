@@ -1,0 +1,10 @@
+project: savantenvs/owntone-server
+target: fuzz_mpd_query
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mpd_query/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mpd_query
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/fuzz_mpd_query/fuzz_mpd_query.dict

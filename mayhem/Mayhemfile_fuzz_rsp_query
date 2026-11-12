@@ -1,0 +1,10 @@
+project: savantenvs/owntone-server
+target: fuzz_rsp_query
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rsp_query/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rsp_query
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/fuzz_rsp_query/fuzz_rsp_query.dict

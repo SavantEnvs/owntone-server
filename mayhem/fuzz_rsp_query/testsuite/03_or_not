@@ -1,0 +1,1 @@
+not (genre = "Rock") or album includes "Blue"

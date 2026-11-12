@@ -1,0 +1,1 @@
+"Pods" { media_kind is podcast and not title includes "x" order by title asc }

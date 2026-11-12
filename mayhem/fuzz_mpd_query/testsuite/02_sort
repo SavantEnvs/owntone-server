@@ -1,0 +1,1 @@
+find (artist == "X") sort title window 0:5

@@ -1,0 +1,1 @@
+"Fav" { genre includes "Rock" or rating > 60 having track > 2 order by random }
