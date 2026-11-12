@@ -1,0 +1,10 @@
+project: savantenvs/owntone-server
+target: fuzz_smartpl
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_smartpl/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_smartpl
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/fuzz_smartpl/fuzz_smartpl.dict

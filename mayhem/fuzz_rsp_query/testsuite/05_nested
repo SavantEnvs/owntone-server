@@ -1,0 +1,1 @@
+(artist = "A" or artist = "B") and (disc = 1 or disc = 2)

@@ -1,0 +1,1 @@
+"My Pl" { artist is "Beatles" and year > 1965 order by year desc limit 10 }

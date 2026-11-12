@@ -1,0 +1,1 @@
+"Grp" { (artist is "A" or artist is "B") and (album is "X" or album is "Y") }
